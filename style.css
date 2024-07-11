@@ -1,0 +1,107 @@
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+.contenido {
+    margin-left: 30rem;
+    margin-right: 20rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
+}
+
+@keyframes slidein {
+    from {
+    translate: 150vw 0;
+    scale: 200% 1;
+}
+
+    to {
+    translate: 0 0;
+    scale: 100% 1;
+}
+}
+
+.in {
+    width: 350px;
+    height: 25px;
+    margin-left: 4rem;
+}
+
+.caja1 {
+    position: static;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    margin-left: 14rem;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 34, 255, 0);
+}
+
+.caja2 {
+    position: static;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    margin-left: 12.5rem;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 34, 255, 0);
+}
+
+.caja3 {
+    position: static;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    margin-left: 11.2rem;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 34, 255, 0);
+}
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.container-boton{
+    background-color: #ffffff00;
+    border: 1px solid #6b6b6b;
+    position: fixed;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-left: 11.5rem;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 85px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(147, 181, 255, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
